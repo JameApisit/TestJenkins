@@ -28,7 +28,6 @@ pipeline {
 
         stage('Deploy') {
             steps{
-                sh 'ls'
                 echo 'Deploy1'
                 echo '******************************'
             }
