@@ -13,6 +13,7 @@ pipeline {
 
         stage('Yarn Install') {
             steps {
+                sh 'ls'
                 echo 'Yarn Install1'
                 echo '******************************'
             }
@@ -20,7 +21,6 @@ pipeline {
 
         stage('Yarn Build1') {
             steps {
-                sh 'ls'
                 echo 'Yarn Build'
                 echo '******************************'
             }
