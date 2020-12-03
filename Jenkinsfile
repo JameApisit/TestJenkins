@@ -28,9 +28,7 @@ pipeline {
 
         stage('Deploy') {
             steps{
-                sh 'git add .'
-                sh 'git commit -m testCommit'
-                sh 'git push origin main'
+                sh 'ls'
                 echo 'Deploy1'
                 echo '******************************'
             }
