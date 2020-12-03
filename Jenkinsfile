@@ -19,20 +19,20 @@ pipeline {
             }
         }
 
-        stage('Yarn Build1') {
+        stage('Yarn Build') {
             steps {
-                echo 'Yarn Build'
+                echo 'Yarn Build1'
                 echo '******************************'
             }
         }
 
 
-        stage('Deploy1') {
+        stage('Deploy') {
             steps{
                 sh 'git add .'
                 sh 'git commit -m testCommit'
                 sh 'git push origin main'
-                echo 'Deploy'
+                echo 'Deploy1'
                 echo '******************************'
             }
         }
