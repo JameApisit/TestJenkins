@@ -13,7 +13,6 @@ pipeline {
 
         stage('Yarn Install') {
             steps {
-                sh 'ls'
                 echo 'Yarn Install1'
                 echo '******************************'
             }
@@ -29,9 +28,6 @@ pipeline {
 
         stage('Deploy') {
             steps{
-                sh 'git add .'
-                sh 'git commit -m testCommit'
-                sh 'git push origin main'
                 echo 'Deploy1'
                 echo '******************************'
             }
